@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: #68BDCA;
+}
+
+/* BACK TO TOP BUTTON*/
+
+#btt {
+    position: fixed;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    width: 50px;
+    transition: margin-bottom 0.6s, opacity 0.6s;
+}
+
+#btt:hover {
+    margin-bottom: 25px;
+    opacity: 1;
+    transition: margin-bottom 0.6s, opacity 0.6s;
+}
+
+
+/* WELCOME */
+
+#welcome {
+    font-family: 'Amatic SC', cursive;
+    color: #FCFFFF;
+    background: url("https://images.unsplash.com/photo-1423589989400-cc0270157ed0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=458cf2662814c68b6eb24d9e55801fa0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    padding: 5% 5% 5% 5%;
+}
+
+#portfolio h1 {
+    font-size: 50px ;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px){
+    .name1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .name1 {
+        font-size: 70px;
+    }
+    
+}
+
+#welcome h3,
+#portfolio h3 {
+    font-size: 28pt;
+}
+
+
+/* DOWN ARROW */
+
+#press {
+    width: 60px;
+    border: solid 4px white;
+    border-radius: 40px;
+    margin-top: 20%;
+    transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+}
+
+#press:hover {
+    background-color: #5BC2B4;
+    opacity: 0.8;
+    margin-top: 21%;
+    transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+}
+
+
+/* ABOUT */
+
+#about {
+    background-color: #0A3739;
+    padding: 5% 5% 5% 5%;
+    height: auto;
+    width: auto;
+}
+
+#about h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+#about p {
+    text-align: left;
+    display: flex
+}
+
+#about #email img {
+    text-align: left;
+    width: 25px;
+}
+
+#email {
+    background-color: #26816E;
+    padding: 2% 2% 2% 2%;
+    border-radius: 40px;
+    transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+}
+
+#portScroll {
+    background-color: #26816E;
+    padding: 2% 2% 2% 2%;
+    border-radius: 40px;
+    margin-left: 2%;
+    transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+}
+
+#about #portScroll img {
+    text-align: left;
+    margin-right: 5px;
+    width: 18px;
+}
+
+#portScroll a,
+#portScroll a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#email:hover,
+#portScroll:hover {
+    box-shadow: 5px 15px 30px #062928;
+    background-color: #1A616C;
+    transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+    cursor: pointer;
+}
+
+#self img {
+    width: 35%;
+    float: right;
+    border: solid 8px #26816E;
+    border-radius: 2000px;
+    box-shadow: 5px 15px 30px #062928;
+}
+
+
+/* PORTFOLIO */
+
+#portfolio {
+    font-family: 'Amatic SC', cursive;
+    background-color: #68BDCA;
+    text-decoration: none;
+    color: white;
+    padding: 5% 5% 5% 5%;
+    width: auto;
+    height: auto;
+}
+
+#portfolio h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15pt;
+}
+
+#port img {
+    width: 150px;
+    height: 150px;
+    opacity: 0.5;
+    transition: opacity 0.5s, box-shadow 0.5s;
+    justify-content: flex-start;
+    margin: 10px;
+
+}
+
+#port img:hover {
+    opacity: 1;
+    box-shadow: 0px 10px 50px #406D91;
+    transition: opacity 0.5s, box-shadow 0.5s;
+}
+
+
+/* NAV */
+
+#openmenu {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20pt;
+    background-color: #68BDCA;
+    border-bottom: solid 2px white;
+    border-right: solid 2px white;
+    position: fixed;
+    padding: 2px;
+    width: 10%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+#openmenu:hover {
+    width: 15%;
+    transition: width 0.5s;
+    cursor: pointer;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position the close button (top right corner) */
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important;
+    /* Override the font-size specified earlier (36px) for all navigation links */
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+
+    .git {
+        margin: 10px;
+    }
+}
+
+.thumbnail {
+    border-radius: 10px;
+    background-color: black;
+
+}
+
+.thumbnail1 {
+    border-radius: 10px;
+    background-color: transparent;
+
+
+}
+
+#git {
+    margin: 10px;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    
+}
+.arrowdown{
+    width: 100px;
+    border: solid 4px rgb(0, 0, 0);
+    border-radius:20px;
+    margin-top: 20%;
+    transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+    
+}
+.contact{
+    display: box;
+    align-items: start;
+    justify-content: center;
+}
+.container {
+    width: 80%; /* Adjusts based on parent element's width */
+    margin: 20px; /* Adjusts based on viewport width */
+}
+
+/* Mobile view (using media query): */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90vw; /* Adjusts based on viewport width */
+        margin: 10px; /* Adjusts based on viewport width */
+        height: auto;
+    }
+    .welcome{
+        width: 90vw; /* Adjusts based on viewport width */
+        margin: 10px;
+        height: auto;
+    }
+    .about{
+        width: 90vw; /* Adjusts based on viewport width */
+        margin: 10px;
+        height: auto;
+        
+    }
+    .portfolio{
+        width: 90vw; /* Adjusts based on viewport width */
+        margin: 10px;
+        height: auto;
+    }
+}
+
+
+
+.container2 .card2 .icon {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c73df;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .card2 .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #fff;
+}
+.container2 .card2 .slide {
+    width: 340px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container2 .card2 .slide.slide1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .7s;
+    transform: translateY(100px);
+}
+.container2 .card2:hover .slide.slide1{
+    transform: translateY(0px);
+}
+.container2 .card2 .slide.slide2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .8s;
+    transform: translateY(-100px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.container2 .card2:hover .slide.slide2{
+    transform: translateY(0);
+}
+.container2 .card2 .slide.slide2::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    bottom: 15px;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c73df;
+}
+.container2 .card2 .slide.slide2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+    height: 100%;
+    width: 100%;
+}
+.container2 .card2 .slide.slide2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+} 
+.image1{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+.image2{
+    height: 200px;
+    width: auto ; 
+    background-position: cover;
+    background-color: black;
+    background-size: cover;
+    
+}
+.image3{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.portcontainer {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax values as needed */
+  gap: 10; /* Set gap to 0 for no space */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+  }
+  
+  .container2 {
+    /* Individual card styles */
+    background-color:transparent;
+    padding: 15px;
+    justify-content: space-between;
+  }
+  
+  /* Media Queries for responsive layout */
+  @media (max-width: 768px) {
+    .portcontainer {
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portcontainer {
+      grid-template-columns: repeat(auto-fit, 100%);
+      justify-content: space-between;
+    }
+  }
+  
